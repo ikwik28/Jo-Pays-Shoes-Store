@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <title>Cart - Jo Pays'</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?
+        family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/50524bf92d.js" 
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><marquee direction="down" behavior="slide"><img src="images/logo.png" width="110px"></marquee></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"><i class="fa fa-house"></i>Home</a></li>
+                    <li><a href="products.html"><i class="fa fa-product-hunt"></i>Products</a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+                    <li><a href="account.html"><i class="fa-regular fa-user"></i>Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="50px" height="50px">
+            <img src="images/menu.png" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+    <!----- cart items details ------>
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Prduct</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <h>Curry Flow 9</h><br>
+                            <small>Price: ₱ 6,195.00</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₱ 6,195.00</td>
+            </tr>
+        </table>
+
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Merchandise Subtotal:</td>
+                    <td>₱ 6,195.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping Total:</td>
+                    <td>₱ 58.00</td>
+                </tr>
+                <tr>
+                    <td>Total Payment:</td>
+                    <td>₱ 6,253.00</td>
+                </tr>
+            </table>
+        </div>
+
+        </div>
+    </div>
+
+<!--------- footer --------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>You can Download this App using Play Store<br>
+                    for android and App Store for ios.</p>
+                   <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                   </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png">
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> &copy; 2023 Jo Pays' Shoes Store. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!--------- js for toggle menu -------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+    else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <title>About - Jo Pays'</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?
+        family=Poppins:wght@200;300;400;500;600;700&display=swap" 
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/50524bf92d.js" 
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="header">
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><marquee direction="down" behavior="slide"><img src="images/logo.png" width="110px"></marquee></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html"><i class="fa fa-house"></i>Home</a></li>
+                    <li><a href="products.html"><i class="fa fa-product-hunt"></i>Products</a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+                    <li><a href="account.html"><i class="fa-regular fa-user"></i>Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="50px" height="50px"></a>
+            <img src="images/menu.png" class="menu-icon" 
+            onclick="menutoggle()">
+        </div>
+    </div>
+</div>
+
+
+<!-------- about page ------>
+<div class="about-page">
+    <div class="about-container">
+        <div class="row">
+            <h1>About Jo Pays' Shoes Store</h1>
+            <h>Jo Pays' Shoes Store is a fun, free, and trusted way to buy and sell instantly 
+                online. We are a leading mobile-first marketplace platform in the Philippines. 
+                Join millions of others on Jo Pays' Shoes Store to list products and shop for 
+                deals online. Doing your Jo Pays' Shoes Store online shopping is safe and we make sure of it. 
+                Get the item you ordered or get your money back with Jo Pays' Shoes Store Guarantee. Create and browse 
+                listings for free, at no extra charge. Join our Jo Pays' Shoes Store community and start shopping today!
+                <br>
+                <br>
+                Jo Pays' Shoes Store is dedicated to bringing the best Jo Pays' Shoes Store online shopping experience to 
+                every Filipino household. Known for the numerous campaigns all year round, the company aims 
+                to make shopping a fun and memorable experience for all. From free shipping specials to discount 
+                vouchers, Jo Pays' Shoes Store never fails to impress loyal fans and new shopping enthusiasts. 
+                Download the Jo Pays' Shoes Store app now and visit the Jo Pays' Shoes Store website too!!!
+                </h>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--------- footer --------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>You can Download this App using Play Store
+                    for android and App Store for ios.</p>
+                   <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                   </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png">
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"> &copy; 2023 Jo Pays' Shoes Store. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!--------- js for toggle menu -------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle()
+        {
+            if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+    else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    </script>
+
+
+<!---------- js for product gallery --------->
+<script>
+    var ProductImg =document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+
+
+
+
+
+    </body>
+</html>
