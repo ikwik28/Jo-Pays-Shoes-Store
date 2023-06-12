@@ -223,6 +223,7 @@ h4
 .col-5
 {
     width: 160px;
+    trnsition: transform 0.3s;
 }
 .col-5 img
 {
