@@ -223,15 +223,20 @@ h4
 .col-5
 {
     width: 160px;
-    trnsition: transform 0.2s;
 }
 .col-5 img
 {
     width: 100%;
     cursor: pointer;
 }
-
-.brands .col-5 img:hover
+.brands .col-5
+{
+    text-align: center;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.brands .col-5:hover
 {
     transform: translateY(-10px);
 }
